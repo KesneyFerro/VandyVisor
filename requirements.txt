@@ -1,0 +1,27 @@
+# Web scraping and HTML parsing
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data manipulation and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Data visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter notebook support (for the notebooks in the project)
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Type hints and development
+typing-extensions>=4.7.0
+
+# HTML parsing utilities (html.unescape is built-in, but good to have lxml for BeautifulSoup)
+lxml>=4.9.0
+
+# Optional: For better performance with pandas and data processing
+openpyxl>=3.1.0
+
+# Optional: For enhanced data analysis
+scikit-learn>=1.3.0
