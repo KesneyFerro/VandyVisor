@@ -1,5 +1,7 @@
 """Parse course catalog detail HTML into structured data."""
 
+from __future__ import annotations
+
 import re
 from html import unescape
 

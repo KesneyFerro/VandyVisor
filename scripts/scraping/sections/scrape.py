@@ -1,5 +1,7 @@
 """Orchestrate section discovery and detail scraping."""
 
+from __future__ import annotations
+
 import os
 
 from tqdm.asyncio import tqdm

@@ -1,7 +1,10 @@
 """Unified CLI for Vanderbilt course scraping."""
 
+from __future__ import annotations
+
 import argparse
 import asyncio
+import sys
 
 from .config import DEFAULT_CONCURRENCY, DEFAULT_BATCH_SIZE
 from .sections.scrape import scrape_sections
@@ -9,6 +12,9 @@ from .catalog.scrape import scrape_catalog
 
 
 def main():
+    if sys.platform == "win32":
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
     parser = argparse.ArgumentParser(description="Vanderbilt course scraper")
     sub = parser.add_subparsers(dest="command", required=True)
 

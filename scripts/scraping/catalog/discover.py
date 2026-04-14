@@ -1,5 +1,7 @@
 """Discover all courses from the historical catalog by searching each subject."""
 
+from __future__ import annotations
+
 import re
 
 from tqdm.asyncio import tqdm

@@ -1,5 +1,7 @@
 """JSON persistence with atomic writes, batch upsert, and checkpoint support."""
 
+from __future__ import annotations
+
 import json
 import os
 from datetime import datetime

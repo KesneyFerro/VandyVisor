@@ -1,5 +1,7 @@
 """Async HTTP client with concurrency control, retry, and paginated fetching."""
 
+from __future__ import annotations
+
 import asyncio
 import re
 

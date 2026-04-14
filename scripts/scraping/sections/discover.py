@@ -1,5 +1,7 @@
 """Discover current-semester class sections via keyword search."""
 
+from __future__ import annotations
+
 from bs4 import BeautifulSoup
 from tqdm.asyncio import tqdm
 

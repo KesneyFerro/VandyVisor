@@ -1,5 +1,7 @@
 """Parse class section detail HTML into structured data."""
 
+from __future__ import annotations
+
 import re
 
 from bs4 import BeautifulSoup
